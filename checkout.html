@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Slumtotos Checkout</title><link rel="stylesheet" href="checkout.css"></head><body>
+  <section class="checkout-container">
+    <h1>Checkout</h1>
+    <form id="checkout-form">
+      <div class="section contact">
+        <h3>Contact Info</h3>
+        <label>Name</label><input type="text" name="name" id="cust-name" required>
+        <label>Email</label><input type="email" name="email" id="cust-email" required>
+      </div>
+      <div class="section shipping">
+        <h3>Shipping Address</h3>
+        <label>Address</label><input type="text" name="address" id="cust-address" required>
+        <label>City</label><input type="text" name="city" id="cust-city" required>
+        <label>Postal Code</label><input type="text" name="postal" id="cust-postal" required>
+      </div>
+      <div class="summary">
+        <h3>Order Summary</h3><ul id="summary-list"></ul><p><strong>Total:</strong> <span id="checkout-total">KES 0</span></p>
+      </div>
+      <button type="button" id="pay-now">Pay Now</button>
+    </form>
+  </section>
+<script src="checkout.js"></script></body></html>

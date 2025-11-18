@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>the Slumtotos-Africa academy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="page-container">
+    <header class="main-header">
+      <div class="brand"><div class="logo">The heart of compassion <span class="sub">-africa</span></div></div>
+      <div class="header-controls">
+        <div id="search-bar" class="header-search"><input type="search" id="search" placeholder="Search West African Fashion..." /></div>
+        <nav class="main-nav"><a href="index.html">Home</a><a href="#shop">Shop</a><a href="checkout.html">Checkout</a></nav>
+        <div class="cart-display" title="Open cart">🛒 <span id="cart-count" class="cart-count">0</span></div>
+      </div>
+    </header>
+
+    <section id="category-filters" class="filters">
+      <button data-cat="All">All</button>
+      <button data-cat="Kente">Kente</button>
+      <button data-cat="Agbada">Agbada</button>
+      <button data-cat="Ankara">Ankara</button>
+      <button data-cat="Casual">Casual</button>
+    </section>
+
+    <main id="shop"><div id="product-list" class="grid"></div></main>
+
+    <aside id="cart-sidebar" aria-hidden="true">
+      <div class="cart-header"><h2>Your Cart</h2><button id="close-cart" aria-label="Close cart">×</button></div>
+      <div id="cart-items" class="cart-items"></div>
+      <div id="cart-summary" class="cart-summary"><strong>Total:</strong> <span id="cart-total">KES 0</span><a href="checkout.html" id="goto-checkout" class="checkout-btn">Go to Checkout</a></div>
+    </aside>
+
+    <footer><p>&copy; 2025 Slumtotos-Africa – With the heart of compassion</p></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
